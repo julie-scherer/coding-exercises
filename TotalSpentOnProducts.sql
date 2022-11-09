@@ -75,7 +75,7 @@ item	total_amount_spent
 WHAT WENT WRONG
 - grouped by registration date when we only need to group items, FOR users who registered in 2022
 
-    **think: total amnt spent ON/BY each item**
+    **think: total amnt spent, GROUPED BY item**
 
 CHANGES TO MAKE
 - use WHERE users registered in 2022 instead of HAVING
@@ -95,5 +95,4 @@ WHERE
     u.registration_date BETWEEN '2022-01-01' AND '2022-12-31'
 GROUP BY 
     p.item
-    -- u.registration_date
 ;
